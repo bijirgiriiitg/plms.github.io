@@ -1,0 +1,179 @@
+*{
+    font-family: 'Lora', serif;
+    padding:0;
+    margin:0;
+    border:0
+}
+.header {
+    overflow: hidden;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7));
+    padding: 20px 10px;
+    height: 70px;
+  }
+  
+ 
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: -2%;
+  
+   
+  }
+  div img{
+      width: 150px;
+      height: 90px;
+      margin-top: -4%;
+      margin-left: -25%;
+      position: relative;
+  }
+ 
+  
+  .header1 ::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ee1717;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+   
+   
+  }
+  .header1 :hover::after{
+      width: 100%;
+  }
+ 
+  .header1{
+    float: right;
+   
+  }
+ 
+  @media screen and (max-width: 500px) {
+    .header{
+      height: 50px;
+    }
+    div img{
+      margin-left: -10%;
+      margin-top: -2%;
+      width: 90px;
+      height: 70px;
+    }
+    .header a {
+      
+      display: block;
+      text-align: left;
+      margin-top: -9%;
+      display: inline-block;
+      margin-left: -3%;
+    }  
+    .header1{
+     
+      display: inline-block;
+      margin-top: -9%;
+      margin-left: 20%;
+    }
+  }
+  
+ 
+#btn{
+    background-color:rgb(221, 73, 36);
+    color:white;
+}
+#btn:focus,#btn:hover{
+    box-shadow: none;
+    outline:none;
+}
+#mydiv{
+    background-size: 100%;
+    margin: 25px;
+    animation-name: myanim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-direction: reverse;
+    animation-fill-mode: initial;
+    
+}
+    
+@keyframes myanim{
+    0%{ top: -400px;}
+    20%{ top: -300px;}
+    30%{ top: -150px;}
+    50%{ top: -100px;}
+    70%{ top: -150px;}
+    80%{ top: -300px;}
+    100%{ top: -400px;}
+}
+
+#table{
+    background-color:rgb(59, 56, 224);
+}
+#search{
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    border-bottom: 1px solid #ced4da;
+}
+#search:hover,#search:focus{
+    box-shadow: none;
+    outline:none;
+}
+
+.footer1{
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7));
+    height: 120px;
+  
+
+}
+.footer1 h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.navbar1 {
+   display: inline-flex;
+    padding: 18px 0px;
+    cursor: pointer;
+  }
+  
+.navbar1 a {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(245, 236, 241);
+    border-radius: 50%;
+    text-align: center;
+    margin: 0px 13px ;
+    box-shadow: 1px 4px 2px 2px rgb(20, 18, 18);
+    line-height: 55px;
+  
+  }
+  
+.navbar1 a:hover {
+    background-color: rgb(90, 233, 185);
+    transform: scale(1.2);
+    transition: all 0.3s linear;
+  }
+.fa-facebook{
+    color: blue;
+  }
+.fa-instagram{
+    color: rgb(255, 0, 85);
+  }
+.fa-github{
+    color: rgb(16, 16, 19);
+  }
+.fa-twitter{
+    color: blue;
+  }
+.fa-telegram{
+    color: rgb(0, 247, 255);
+}
+.fa-heart-o{
+    color: #ff1313;
+}
